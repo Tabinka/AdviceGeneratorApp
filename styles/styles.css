@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-width: 100%;
+}
+html body {
+  padding: 0;
+  min-width: 100%;
+  margin: 0;
+  height: 100%;
+  background-color: hsl(218deg, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+html body main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body main #advice {
+  max-width: 30em;
+  background: hsl(217deg, 19%, 24%);
+  border-radius: 1em;
+  margin: auto;
+  padding: 3em 4em;
+  text-align: center;
+  position: relative;
+}
+html body main #advice #number {
+  font-size: 0.9em;
+  text-align: center;
+  color: hsl(150deg, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+html body main #advice #advice-text {
+  font-size: 28px;
+  color: hsl(193deg, 38%, 86%);
+}
+html body main #advice #advice-text::before {
+  content: open-quote;
+}
+html body main #advice #advice-text::after {
+  content: close-quote;
+}
+html body main #advice #divider {
+  width: 100%;
+  display: block;
+  height: 2em;
+  background: url("/images/pattern-divider-desktop.svg") center no-repeat;
+  background-size: contain;
+}
+html body main #advice #new-advice {
+  width: 3em;
+  height: 3em;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  background-color: hsl(150deg, 100%, 66%);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -8%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+html body main #advice #new-advice:hover {
+  background-color: hsl(150deg, 50%, 66%);
+}
+html body footer {
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  color: hsl(193deg, 38%, 86%);
+  font-size: 0.8em;
+  font-weight: 200;
+}
+html body footer a {
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  html body main {
+    padding: 0 1em;
+  }
+  html body main #advice #divider {
+    background: url("/images/pattern-divider-mobile.svg") center no-repeat;
+    background-size: contain;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

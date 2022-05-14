@@ -1,0 +1,92 @@
+@import colors
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap')
+
+html
+    padding: 0
+    margin: 0
+    height: 100%
+    min-width:100%
+    body
+        padding: 0
+        min-width:100%
+        margin: 0
+        height: 100%
+        background-color: $background
+        font-family: 'Manrope', sans-serif
+        font-weight: 800
+        main
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            #advice
+                max-width: 30em
+                background: $advice_box
+                border-radius: 1em
+                margin: auto
+                padding: 3em 4em
+                text-align: center
+                position: relative
+                #number
+                    font-size: .9em
+                    text-align: center
+                    color: $advice_second
+                    text-transform: uppercase
+                    letter-spacing: .2em
+                #advice-text
+                    font-size: 28px
+                    color: $text
+                    &::before
+                        content: open-quote
+                    &::after
+                        content: close-quote
+                #divider
+                    width: 100%
+                    display: block
+                    height: 2em
+                    background: url('/images/pattern-divider-desktop.svg') center no-repeat
+                    background-size: contain
+                #new-advice
+                    width: 3em
+                    height: 3em
+                    display: block
+                    text-align: center
+                    border-radius: 50%
+                    background-color: $advice_second
+                    margin: auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    position: absolute
+                    bottom: -8%
+                    left: 50%
+                    transform: translateX(-50%)
+                    cursor: pointer
+                    transition: .3s
+                    &:hover
+                        background-color: $advice_second_hover
+        footer
+            position: fixed
+            bottom: 0
+            margin: auto
+            text-align: center
+            width: 100%
+            color: $text
+            font-size: .8em
+            font-weight: 200
+            a
+                color: white
+
+
+@media only screen and (max-width: 500px)
+    html
+        body
+            main
+                padding: 0 1em
+                #advice
+                    #divider
+                        background: url('/images/pattern-divider-mobile.svg') center no-repeat
+                        background-size: contain
+    
