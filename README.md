@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Pages](https://your-live-site-url.com)
+- Live Site URL: [Pages](https://tabinka.github.io/AdviceGeneratorApp/)
 
 ## My process
 
@@ -50,7 +50,7 @@ Use this section to recap over some of your major learnings while working throug
 function getAdvice(){
     let fetchRes = fetch(
         "https://api.adviceslip.com/advice");
-    fetchRes.then(res =>
+    fetchRes.then(res => ...
 }
 ```
 
